@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practic 2</title>
+</head>
+<body>
+    <script>
+        // ZAD 1
+        let nowYear = new Date().getFullYear();
+        let nowMonth = new Date().getMonth();
+        let nowDay = new Date().getDay();
+
+
+        class News {
+            title = 'nothing';
+            text = 'nothing';
+            date;
+            tags = ['1','2','3'];
+            
+
+            print(){
+                document.write(
+                    `<div style="font-family: Arial, Helvetica, sans-serif; display: column; align-items: center; font-size: 16px;">
+                        <h1 style="font-weight: bold;">${obj.title}</h1>
+                        <p>${obj.date.getDate()}.${obj.date.getMonth()}.${obj.date.getFullYear()}</p>
+                        <p>${obj.text}</p>
+                        <div style="display: flex; margin: 5px 5px;">
+                            <p style="color: blue; text-decoration: underline; margin: 5px 5px;" href="index.html" >${obj.tags[0]} </p>
+                            <p style="color: blue; text-decoration: underline; margin: 5px 5px;" href="index.html" >${obj.tags[1]} </p>
+                            <p style="color: blue; text-decoration: underline; margin: 5px 5px;" href="index.html" >${obj.tags[2]} </p>
+                        </div>
+                    </div>`
+                );
+            }
+        };
+            var obj = new News();
+            obj.title = 'Почему Скоринов Никита так хорош?';
+            obj.text = 'Просто он царь. Просто он царь. Просто он царь. Просто он царь. Просто он царь. Просто он царь. <br>Просто он царь. Просто он царь. Просто он царь. Просто он царь. <br>Просто он царь. Просто он царь. Просто он царь. Просто он царь. Просто он царь и отец. ';
+            obj.date = new Date("2023-06-22");
+            obj.tags = ['#ПростоЦарь','#XOPC','#TheKing'];
+            obj.print();
+            var ULTIMA2000 = new News();
+            var JubaJanga = new News();
+            //ZAD 2
+
+            var saske = {
+                mass:[],
+                Fullprint(){
+                document.write(
+                    // console.log(Object.getOwnPropertyNames(News))
+                );
+            }
+            };
+            
+
+    </script>
+    
+</body>
+</html>
